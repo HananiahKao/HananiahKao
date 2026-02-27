@@ -1,16 +1,34 @@
-## Hi there 👋
+# Hananiah Kao
 
-<!--
-**HananiahKao/HananiahKao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+15-year-old Montessori student, builder, and vibe coder based in Taiwan.
+I build tools at the intersection of faith, automation, and AI.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I'm building
+
+- **[daily-manna-email](https://github.com/HananiahKao/daily-manna-email)** — Automated daily Bible study email system for the Daily Manna community. Multi-source content pipeline (ezoe.work, Wix), FastAPI admin dashboard, Gmail API reply processing, and a cron dispatcher. Deployed on Render.
+
+- **[ollama-agent](https://github.com/HananiahKao/ollama-agent)** — A local AI agent built on Ollama that plugs into macOS Accessibility APIs (AXUIElement) for real UI-aware automation. Tools are hot-loadable at runtime.
+
+- **[ask-ChatGPT-MCP](https://github.com/HananiahKao/ask-ChatGPT-MCP)** — MCP server that uses Playwright to drive ChatGPT in a browser and return answers to your AI assistant.
+
+- **[family_tree_builder](https://github.com/HananiahKao/family_tree_builder)** — Interactive Python CLI for building and querying family trees, with undo support and comprehensive test coverage.
+
+- **[qrcode-generator](https://github.com/HananiahKao/qrcode-generator)** — Minimal Python script to generate QR codes from any URL or text.
+
+---
+
+## Stack
+
+**Languages:** Python, JavaScript  
+**Frameworks:** FastAPI, Playwright, MCP protocol  
+**AI:** Claude, Ollama, Cline, Cursor  
+**Cloud:** Render, PythonAnywhere  
+**APIs:** Gmail API (OAuth), macOS Accessibility (AXError), SQLite
+
+---
+
+## Contact
+
+GitHub is the best place to find me.
