@@ -1,0 +1,45 @@
+name: Update age on birthday
+
+on:
+  schedule:
+    - cron: '0 0 15 1 *'  # January 15th at midnight UTC
+  workflow_dispatch:       # allow manual trigger for testing
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Calculate and update age
+        run: |
+          python3 - <<'PYEOF'
+          import re
+          from datetime import date
+
+          birthdate = date(2011, 1, 15)
+          today = date.today()
+          age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          updated = re.sub(r'\d+-year-old', f'{age}-year-old', content)
+
+          with open('README.md', 'w') as f:
+              f.write(updated)
+
+          print(f"Updated age to {age}")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (
+            git add README.md &&
+            git commit -m "Happy birthday! Update age in README" &&
+            git push
+          )
