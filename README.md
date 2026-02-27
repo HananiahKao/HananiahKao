@@ -11,8 +11,6 @@ I build tools at the intersection of faith, automation, and AI.
 
 - **[ollama-agent](https://github.com/HananiahKao/ollama-agent)** — A local AI agent built on Ollama that plugs into macOS Accessibility APIs (AXUIElement) for real UI-aware automation. Tools are hot-loadable at runtime.
 
-- **[ask-ChatGPT-MCP](https://github.com/HananiahKao/ask-ChatGPT-MCP)** — MCP server that uses Playwright to drive ChatGPT in a browser and return answers to your AI assistant.
-
 - **[family_tree_builder](https://github.com/HananiahKao/family_tree_builder)** — Interactive Python CLI for building and querying family trees, with undo support and comprehensive test coverage.
 
 - **[qrcode-generator](https://github.com/HananiahKao/qrcode-generator)** — Minimal Python script to generate QR codes from any URL or text.
